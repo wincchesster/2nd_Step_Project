@@ -1,16 +1,28 @@
 //====================================================================================================
 .header {
 	
+	// .header__icon
+
+	._icon-logo {
+		color: $accentColor;
+		transition: all 0.1s ease 0s;
+		@media (any-hover: hover){
+			&:hover{
+				color: $reverseColor;
+			}
+		}
+	}
 	._icon-logo:before {
 		content: "\e906";
 		font-size: rem(40);
-		color: $accentColor;
 		position: relative;
 		z-index: 4;
 		@media (max-width:$mobileSmall){
 			 content: "\e900";
 		}
 	}
+
+
 	// .header__container
 	&__container {
 		display: flex;
@@ -55,6 +67,7 @@
 		background: $accentColor;
 		border-radius: rem(40);
 		padding: rem(11) rem(35);
+		transition: all 0.1s ease 0s;
 		
 
 		@media (max-width:$mobileSmall){
@@ -62,6 +75,14 @@
 			 top: rem(33);
 			 left: 50%;
 			 transform: translateX(-50%);
+		}
+
+		@media (any-hover: hover){
+			&:hover{
+				background: $reverseColor;
+				color: $accentColor;
+
+			}
 		}
 	}
 }
@@ -122,6 +143,7 @@
 		font-size: rem(16);
 		font-weight: 700;
 		line-height: math.div(17, 16);
+		transition: all 0.1s ease 0s;
 		@media (max-width:$mobileSmall){
 			 color: $reverseColor;
 			 font-size: rem(26);
@@ -130,6 +152,12 @@
 			 padding: rem(25) rem(30);
 			 border-bottom: 1px solid #6a6a6a;
 			 ;
+		}
+
+		@media (any-hover: hover){
+			&:hover{
+				color: $reverseColor;
+			}
 		}
 	}
 
