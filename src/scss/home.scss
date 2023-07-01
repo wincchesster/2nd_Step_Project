@@ -1,3 +1,144 @@
 //====================================================================================================
+.page {
+
+    // .page__intro
+    &__intro {
+        position: relative;
+        background: black url("@img/main-intro.jpg") no-repeat center center;
+        background-size: contain;
+        min-height: 70vh;
+
+        @media (max-width:$mobileSmall){
+             background-size: cover;
+        }
+    }
+}
+.intro-section {
+    
+   
+    // .intro-section__container
+    &__container {
+       
+    }
+    // .intro-section__content
+    &__content {
+        
+    }
+    // .intro-section__action
+    &__action {
+        position: absolute;
+        bottom: rem(-65);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: rem(19);
+        
+
+    }
+    // .intro-section__button
+    &__button {
+        
+        color: $reverseColor;
+        font-size: rem(21);
+        font-weight: 700;
+        line-height: math.div(22 ,21);
+        text-align: center;
+        background-color: $accentColor;
+        border-radius: rem(40);
+        padding: rem(20);
+        width: 120%;
+        
+
+        @media (max-width:$mobile){
+             font-size: rem(18);
+        }
+
+        @media (max-width:$mobileSmall){
+            font-size: rem(16);
+            width: 180%;
+       }
+    }
+    // .intro-section__sub
+    &__sub {
+        color: $dimmingColor;
+        font-size: rem(14);
+        line-height: math.div(15 ,14);
+
+        @media (max-width:$mobileSmall){
+             width: 135%;; 
+        }
+        
+    }
+
+}
+.title {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(15);
+
+    // padding-top: rem(50);
+    @include adaptiveValue("padding-top", 180, 30, 0, 3840, 1500);
+
+    @media (max-width:$mobile){
+        padding-top: rem(75);
+    }
+
+
+
+
+    // .title__label
+    &__label {
+        color: $reverseColor;
+        font-size: rem(82);
+        font-weight: 700;
+        line-height: 1;
+        
+
+        @media (max-width:$mobile){
+            font-size: rem(72);
+        }
+        @media (max-width:$mobileSmall){
+            font-size: rem(48);
+        }
+    }
+    // .title__value
+    &__value {
+        color: $accentColor;
+        font-family: Lato;
+        font-size: rem(30);
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        
+        @media (max-width:$mobile){
+            font-size: rem(24);
+        }
+        @media (max-width:$mobileSmall){
+            font-size: rem(18);
+            line-height: math.div(24 ,18);
+        }
+
+        // .title__value_sub
+        &_sub {
+            color: $dimmingColor;
+            font-family: Montserrat;
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: 1;
+
+            @media (max-width:$mobile){
+                font-size: rem(14);
+            }
+        }
+    }
+}
+.action {
+
+}
 
 //====================================================================================================

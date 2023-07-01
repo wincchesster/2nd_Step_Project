@@ -97,3 +97,19 @@
 		}
 	}
 }
+
+
+//
+// $breakpoints: (
+//   "small": 1080px,
+//   "medium": 2048px,
+//   "large": 3840px
+// );
+
+// @mixin adaptiveValuePadding($property, $values) {
+//   @each $breakpoint, $value in $values {
+//     @media (min-width: breakpoint-min($breakpoint, $breakpoints)) {
+//       #{$property}: $value;
+//     }
+//   }
+// }
