@@ -12,8 +12,21 @@
             background-position: center 60%;
         }
     }
+
+    &__features {
+        padding-top: rem(60);
+        padding-bottom: rem(40);
+        background-color: #F4F4F4;
+
+        @media (max-width:$mobile){
+             background-color: white; 
+        }
+
+    }
 }
 
+//====================================================================================================
+//Intro section:
 .intro-section {
 
     .title {
@@ -22,7 +35,11 @@
         align-items: center;
         gap: rem(15);
         // padding-top: rem(50);
-        @include adaptiveValue("padding-top", 180, 30, 0, 3840, 1500);
+        @include adaptiveValue("padding-top", 250, 25, 0, 3840, 2000);
+
+        @media (max-width:$tablet){
+            padding-top: rem(80);
+        }
     
         @media (max-width:$mobile){
             padding-top: rem(75);
@@ -132,20 +149,20 @@
     }
 }
 
-
-
 //====================================================================================================
 //Git section:
-
 .git-section {
-
-
+    // .git-section__container
     &__container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: rem(125) rem(20) rem(70) rem(20);
+        padding: rem(125) rem(160) rem(60);
+
+        @media (max-width:$tablet){
+            padding: rem(125) rem(20) rem(70); 
+        }
     }
     // .git-section__text
     &__text {
@@ -195,16 +212,143 @@
         gap: rem(10);
     }
 }
-.about {
-    // .about__github-button--watch
-    &__github-button--watch {
+
+//====================================================================================================
+// Features section:
+.features-section {
+    // .features-section__container
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: rem(10);
+
+        @media (max-width:$mobile){
+            grid-template-columns: 1fr;
+            
+        }
     }
-    // .about__github-button--star
-    &__github-button--star {
+    // .features-section__advantages
+    &__advantages {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        padding-right: rem(65);
+
+        @media (max-width:$mobile){
+             grid-column: 1;
+             grid-row: 2;
+             padding: rem(0) rem(25);
+        }
+
+        @media (max-width:$mobileSmall){
+            padding: rem(0) rem(0); 
+        }
     }
-    // .about__github-button--fork
-    &__github-button--fork {
+    // .features-section__label
+    &__label {
+        grid-column: 2;
+        grid-row: 1;
+
+        color: $accentColor;
+        font-weight: 700;
+        // font-size: rem(48);
+        @include adaptiveValue("font-size", 48, 30, 0, 1200, 768);
+        line-height: math.div(50, 48);
+        height: rem(100);
+
+
+        @media (max-width:$mobile){
+            grid-column: 1;
+            grid-row: 1;
+
+            font-size: rem(42);
+            line-height: math.div(44 ,42);
+            text-align: center;
+        }
+
+        @media (max-width:$mobileSmall){
+             font-size: rem(32);
+             line-height: math.div(38 ,32); 
+        }
+    }
+    // .features-section__reel
+    &__reel {
+        position: relative;
+        grid-column: 2;
+        grid-row: 1 / 3;
+
+        img {
+            width: auto;
+            height: auto;
+            max-height: 90%;
+            position: absolute;
+            top: 15%;
+            left: 0;
+
+            @media (max-width:$mobile){
+                position: relative;
+                max-height: 150%;
+                max-width: 150%;
+                top: 5%;
+                left: 5%; 
+            }
+
+            @media (max-width:$mobileSmall){
+                max-height: 200%;
+                max-width: 200%;
+                top: 0;
+                left: 0; 
+            }
+        }
+
+        @media (max-width:$mobile){
+            grid-column: 1;
+            grid-row: 3 \ 5;
+        }
     }
 }
-.github-button {
+.advantages {
+    // .advantages__item
+    &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {margin-bottom: rem(45);}
+
+        @media (max-width:$mobileSmall){
+             flex-direction: column;
+             text-align: center;
+        }
+        
+        img {
+            max-width: 20%;
+            height: auto; 
+            padding-right: rem(20);
+
+            @media (max-width:$tablet){
+                max-width: 30%;
+            }
+
+            @media (max-width:$mobile){
+                max-width: 15%; 
+            }
+
+            @media (max-width:$mobileSmall){
+                 max-width: 50%; 
+                 padding: rem(15) rem(0);
+                 
+            }
+        }
+    }
+    // .advantages__title
+    &__title {
+        color: $mainColor;
+        font-size: rem(16);
+        line-height: math.div(21 , 16);
+        padding-bottom: rem(16);
+    }
+    // .advantages__value
+    &__value {
+        color: $dimmingColor;
+        font-size: rem(14);
+        line-height: math.div(21 ,14);
+    }
 }
