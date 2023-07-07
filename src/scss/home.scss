@@ -142,6 +142,7 @@
         color: $dimmingColor;
         font-size: rem(14);
         line-height: math.div(15 ,14);
+        text-align: center;
 
         @media (max-width:$mobileSmall){
              width: 135%;; 

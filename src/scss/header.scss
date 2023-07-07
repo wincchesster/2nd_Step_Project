@@ -239,9 +239,9 @@
 			span {
 				width: 0;
 			}
-			&::before,
-			&::after {
-			}
+			// &::before,
+			// &::after {
+			// }
 			&::before {
 				top: calc(50% - rem(1));
 				transform: rotate(-45deg);
