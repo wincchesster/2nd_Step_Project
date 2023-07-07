@@ -3,7 +3,6 @@
 	z-index: 99;
 	background-color: black;
 	// .header__icon
-
 	._icon-logo {
 		color: $accentColor;
 		transition: all 0.1s ease 0s;
@@ -95,6 +94,7 @@
 
 	// .menu__body
 	&__body {
+		z-index: -1;
 		@media (max-width:$mobileSmall){
 			position: absolute;
 			left: 0;
@@ -104,18 +104,18 @@
 			max-height: 80%;
 			width: 90%;
 			overflow: auto;
-			transition: top 0.3s ease 0s;
+			transition: all 0.3s ease 0s;
 			background-color: $mainColor;
 			padding: rem(103) rem(0) rem(0) rem(0);
 			&::before{
 				content:'';
-				position: fixed;
+				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
 				height: rem(103);
 				background-color: $backgroundColor;
-				z-index: 2;
+				z-index: 3;
 			}
 			.menu-open & {
 				top: 0;
