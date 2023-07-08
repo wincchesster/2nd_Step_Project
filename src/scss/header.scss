@@ -182,7 +182,7 @@
 
 	&__link--active::before {
 		@media (max-width:$mobileSmall){
-			content: "";
+		content: "";
 		position: absolute;
 		top: 50%;
   		left: 0;
