@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 652 652" style="enable-background:new 0 0 652 652;" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 4118.1 1000"
+	 style="enable-background:new 0 0 4118.1 1000;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FF4422;}
 </style>
-<path class="st0" d="M330.1,393.7h-54.5v-47.3c0-6.4-2.7-11.8-6.4-16.4l-20.9-20.9c-4.5-3.6-10-6.4-16.4-6.4H221v90.9h-54.5V248.3
-	h79.1c11.8,0,23.6,4.5,31.8,13.6l39.1,39.1c9.1,8.2,13.6,20,13.6,31.8V393.7z M566.5,248.3v47.3c0,6.4-2.7,11.8-6.4,16.4l-20.9,20.9
-	c-4.5,4.5-10,6.4-16.4,6.4h-22.7c7.3-8.2,11.8-19.1,11.8-30v-60.9h-54.5v47.3c0,6.4-2.7,11.8-6.4,16.4l-20.9,20.9
-	c-4.5,4.5-10,6.4-16.4,6.4h-10.9v-90.9h-54.5v145.5h79.1c11.8,0,23.6-4.5,31.8-13.6l25.5-25.5v39.1h51.8c11.8,0,23.6-4.5,31.8-13.6
-	l39.1-39.1c9.1-8.2,13.6-20,13.6-31.8v-60.9H566.5z M148.3,248.3H21v54.5h36.4v90.9h54.5v-90.9h36.4V248.3z"/>
+<metadata>Svg Vector Icons : http://www.onlinewebfonts.com/icon<sfw  xmlns="&ns_sfw;">
+	<slices></slices>
+	<sliceSourceBounds  bottomLeftOrigin="true" height="1000" width="4118.1" x="-1541.4" y="0"></sliceSourceBounds>
+</sfw>
+</metadata>
+<path class="st0" d="M2121.5,997.9h-374.1V673.3c0-43.9-18.5-81-43.9-112.6l-143.4-143.4c-30.9-24.7-68.6-43.9-112.6-43.9h-74.8
+	v623.9H998.6V0h542.9c81,0,162,30.9,218.3,93.3l268.4,268.4c62.5,56.3,93.3,137.3,93.3,218.3V997.9z M3744,0v324.6
+	c0,43.9-18.5,81-43.9,112.6l-143.4,143.4c-30.9,30.9-68.6,43.9-112.6,43.9h-155.8c50.1-56.3,81-131.1,81-205.9V0.7h-374.1v324.6
+	c0,43.9-18.5,81-43.9,112.6l-143.4,143.4c-30.9,30.9-68.6,43.9-112.6,43.9h-74.8V1.4h-374.1V1000h542.9c81,0,162-30.9,218.3-93.3
+	l175-175V1000h355.5c81,0,162-30.9,218.3-93.3l268.4-268.4c62.5-56.3,93.3-137.3,93.3-218.3V2.1H3744V0z M873.7,0H0v374.1h249.8
+	v623.9h374.1V374.1h249.8V0z"/>
 </svg>
